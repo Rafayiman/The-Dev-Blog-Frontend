@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1>All Blog Posts</h1>
+
+  <table class="table table-striped blog-post-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th class="text-center">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.title }}</td>
+        <td class="text-center">
+          <a [routerLink]="['/admin-posts', post.id]" class="btn btn-sm btn-primary">View</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-primary " routerLink='/admin-posts-add'> Add Post</a>
+
+</div>

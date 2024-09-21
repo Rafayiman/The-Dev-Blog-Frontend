@@ -1,0 +1,70 @@
+<div class="container" *ngIf="post" >
+  <h1>View Blog</h1>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Id</label>
+      <input
+        type="text"
+        class="form-control"
+        name="id"
+        [(ngModel)]="post.id"
+        readonly
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        [(ngModel)]="post.title"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <textarea class="form-control" name="content" [(ngModel)]="post.content">
+,</textarea
+      >
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Featured Image Url</label>
+      <input
+        type="text"
+        class="form-control"
+        name="featuredImageUrl"
+        [(ngModel)]="post.featuredImageUrl"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Summary</label>
+      <textarea class="form-control" name="summary" [(ngModel)]="post.summary">
+,</textarea
+      >
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Author</label>
+      <input type="text" class="form-control" name="author" [(ngModel)]="post.author" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Published Date</label>
+      <input type="text" class="form-control" name="publishedDate" [(ngModel)]="post.publishedDate" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Updated Date</label>
+      <input type="text" class="form-control" name="updatedDate" [(ngModel)]="post.updatedDate" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">URL lHandle</label>
+      <input type="text" class="form-control" name="urlHamdle" [(ngModel)]="post.urlHamdle" />
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-label"> Visible </label>
+      <input type="checkbox" class="form-check" name="visible" [(ngModel)]="post.visible" />
+    </div>
+    <div class="form-check mb-3">
+    <button class="btn btn-primary" > Save </button>
+    <a class="btn btn-danger" style="margin: 10px;" (click)="deletePost()" > Delete </a>
+    </div>
+</form>
+</div>

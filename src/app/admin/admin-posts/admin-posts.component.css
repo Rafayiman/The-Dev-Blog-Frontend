@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #343A40;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post-table {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .blog-post-table thead th {
+    color: #343A40;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .blog-post-table tbody td {
+    color: #666;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .btn-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #343A40;
+    color: #fff;
+    border-color: #343A40;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #29323a;
+  }
+  
+  .float-right {
+    float: right; /* Right-align the "Add New Post" button */
+  }
+  
